@@ -1,0 +1,7 @@
+<h1>My First Attribute Directive</h1>
+<p>Pick a highlight color</p>
+<input [(ngModel)]="color" type="radio" name="color" value="green">Green
+<input [(ngModel)]="color" type="radio" name="color" value="yellow">Yellow
+<input [(ngModel)]="color" type="radio" name="color" value="cyan">Cyan
+<p [appHighlight]="color">Highlight me!</p>
+<p [appHighlight]="color" defaultColor="violet">Highlight me too!</p>

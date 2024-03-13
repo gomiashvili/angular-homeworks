@@ -11,6 +11,8 @@ import { Child1Component } from './components/child1/child1.component';
 import { Parent2Component } from './components/parent2/parent2.component';
 import { Child2Component } from './components/child2/child2.component';
 import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
+import { HighlightDirectiveComponent } from './components/highlight-directive/highlight-directive.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
     Parent2Component,
     Child2Component,
     NgswitchComponent,
+    HighlightDirectiveComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
