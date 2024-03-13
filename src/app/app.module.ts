@@ -13,6 +13,7 @@ import { Child2Component } from './components/child2/child2.component';
 import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
 import { HighlightDirectiveComponent } from './components/highlight-directive/highlight-directive.component';
 import { HighlightDirective } from './highlight.directive';
+import { UnlessAnimComponent } from './components/unless-anim/unless-anim.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HighlightDirective } from './highlight.directive';
     NgswitchComponent,
     HighlightDirectiveComponent,
     HighlightDirective,
+    UnlessAnimComponent,
   ],
   imports: [
     BrowserModule,

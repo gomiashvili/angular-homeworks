@@ -1,0 +1,6 @@
+<span>The condition is currently</span><span [appHighlight]="condition == true? 'green' : 'yellow'"
+    defaultColor="yellow">{{condition}}</span><button (click)="toggle()">Toggle condition to
+    {{!condition}}</button>
+<p *ngIf="!condition">(A) This paragraph is displayed because the condition is false</p>
+<p *ngIf="condition">(B) Althrough the condition is true, this paragraph is displayed because myUnless is set to false.
+</p>
