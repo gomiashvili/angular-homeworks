@@ -1,0 +1,16 @@
+<h1>NgSwitch Binding</h1>
+<p>Pick your favorite item</p>
+<div class="items">
+    <input [(ngModel)]="favItem" type="radio" name="fav-item" value="teapot">Teapot <br>
+    <input [(ngModel)]="favItem" type="radio" name="fav-item" value="lamp">Lamp <br>
+    <input [(ngModel)]="favItem" type="radio" name="fav-item" value="phone">Phone <br>
+    <input [(ngModel)]="favItem" type="radio" name="fav-item" value="tv">Television <br>
+    <input [(ngModel)]="favItem" type="radio" name="fav-item" value="fishbowl">Fishbowl <br>
+</div>
+<div [ngSwitch]="favItem">
+    <p *ngSwitchCase="'teapot'">I'm a little Teapot, short and stout!</p>
+    <p *ngSwitchCase="'lamp'">This is the britest Lamp in town.<br>Are you as bright as Lamp?</p>
+    <p *ngSwitchCase="'phone'">Which is slimmest Phone?</p>
+    <p *ngSwitchCase="'tv'">Has anyone seen my Television?</p>
+    <p *ngSwitchCase="'fishbowl'">Fishbowl is strange and misterious.</p>
+</div>
