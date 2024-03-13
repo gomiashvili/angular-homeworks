@@ -14,6 +14,7 @@ import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
 import { HighlightDirectiveComponent } from './components/highlight-directive/highlight-directive.component';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessAnimComponent } from './components/unless-anim/unless-anim.component';
+import { UnlessStyleDirective } from './unless-style.directive';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { UnlessAnimComponent } from './components/unless-anim/unless-anim.compon
     HighlightDirectiveComponent,
     HighlightDirective,
     UnlessAnimComponent,
+    UnlessStyleDirective,
   ],
   imports: [
     BrowserModule,
