@@ -1,0 +1,25 @@
+<div class="login">
+    <div class="img-box">
+        <img src="../../../assets/images/background-frame.svg">
+    </div>
+    <div class="text-box">
+        <app-aven-logo></app-aven-logo>
+        <p>Login into your account</p>
+        <label for="email">Email id:
+            <input type="text" id="email" placeholder="info@provistechnologies.com">
+        </label>
+        <label for="password">Password
+            <input type="text" id="password" placeholder="Enter your password">
+        </label>
+        <div class="forget">
+            <a href="">forget password?</a>
+        </div>
+        <button class="login-btn">Login now</button>
+        <div class="or">
+            <div class="line"></div>
+            <label>OR</label>
+            <div class="line"></div>
+        </div>
+        <button class="signup-btn" (click)="goToSignup()">Signup now</button>
+    </div>
+</div>

@@ -15,6 +15,11 @@ import { HighlightDirectiveComponent } from './components/highlight-directive/hi
 import { HighlightDirective } from './highlight.directive';
 import { UnlessAnimComponent } from './components/unless-anim/unless-anim.component';
 import { UnlessStyleDirective } from './unless-style.directive';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { Homework4Component } from './components/homework4/homework4.component';
+import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { AvenLogoComponent } from './components/aven-logo/aven-logo.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -30,11 +35,15 @@ import { UnlessStyleDirective } from './unless-style.directive';
     HighlightDirective,
     UnlessAnimComponent,
     UnlessStyleDirective,
+    LoginFormComponent,
+    Homework4Component,
+    SignupFormComponent,
+    AvenLogoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
