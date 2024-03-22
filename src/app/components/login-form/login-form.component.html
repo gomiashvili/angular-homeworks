@@ -5,16 +5,29 @@
     <div class="text-box">
         <app-aven-logo></app-aven-logo>
         <p>Login into your account</p>
+
         <label for="email">Email id:
-            <input type="text" id="email" placeholder="info@provistechnologies.com">
+            <div class="input-div">
+                <input type="text" id="email" placeholder="info@provistechnologies.com" [(ngModel)]="emailAddress">
+                <div class="input-icon">
+                    <img src="../../../assets/images/mail.svg">
+                </div>
+            </div>
         </label>
+
+
         <label for="password">Password
-            <input type="text" id="password" placeholder="Enter your password">
+            <div class="input-div">
+                <input type="text" id="password" placeholder="Enter your password" [(ngModel)]="loginPassword">
+                <div class="input-icon">
+                    <img src="../../../assets/images/lock.svg">
+                </div>
+            </div>
         </label>
         <div class="forget">
             <a href="">forget password?</a>
         </div>
-        <button class="login-btn">Login now</button>
+        <button class="login-btn" (click)="login()">Login now</button>
         <div class="or">
             <div class="line"></div>
             <label>OR</label>

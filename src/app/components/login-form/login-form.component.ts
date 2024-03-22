@@ -7,10 +7,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class LoginFormComponent implements OnInit {
   @Output() shownSignup = new EventEmitter<boolean>();
 
+  emailAddress = '';
+  loginPassword = '';
+
   constructor() { }
   ngOnInit(): void {
   }
   goToSignup() {
     this.shownSignup.emit(true);
+  }
+  login() {
+    console.log(`email: ${this.emailAddress}, password: ${this.loginPassword}`);
   }
 }

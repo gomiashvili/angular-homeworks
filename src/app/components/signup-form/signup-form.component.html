@@ -1,30 +1,34 @@
 <div class="signup">
-    <div class="form">
+    <div class="form-section">
+        <!-- <button>Back to Login</button> -->
         <app-aven-logo></app-aven-logo>
-        <form>
-            <label for="password">First Name :
-                <input type="text" id="firstname" placeholder="Enter your name..">
+        <p>Login into your account</p>
+        <form [formGroup]="profileForm">
+            <label for="firstname">First Name :
+                <input type="text" id="firstname" placeholder="Enter your name.." formControlName="firstName">
             </label>
-            <label for="password">Last Name :
-                <input type="text" id="lastname" placeholder="Enter your name..">
+            <label for="lastname">Last Name :
+                <input type="text" id="lastname" placeholder="Enter your name.." formControlName="lastName">
             </label>
-            <label for="password">Email Id :
-                <input type="text" id="emailid" placeholder="info@xyz.com">
+            <label for="emailid">Email Id :
+                <input type="text" id="emailid" placeholder="info@xyz.com" formControlName="email">
             </label>
-            <label for="password">Mobile No. :
-                <input type="text" id="mobile" placeholder="+91 - 98596 58000">
+            <label for="mobile">Mobile No. :
+                <input type="number" id="mobile" placeholder="+91 - 98596 58000" formControlName="mobNumber">
             </label>
             <label for="password">Password :
-                <input type="text" id="spassword" placeholder="Enter your password">
+                <input type="password" id="password" placeholder="Enter your password" formControlName="password">
+                <!-- {{profileForm.get("password")?.errors | json}} -->
             </label>
-            <label for="password">Confirm Password :
-                <input type="text" id="password" placeholder="Confirm your password">
+            <label for="cpassword">Confirm Password :
+                <input type="text" id="cpassword" placeholder="Confirm your password" formControlName="confirmPassword">
             </label>
-            <label for="password">Company Name :
-                <input type="text" id="company" placeholder="Enter Company Name..">
+            <label for="company">Company Name :
+                <input type="text" id="company" placeholder="Enter Company Name.." formControlName="company">
             </label>
         </form>
-        <button>sign up</button>
+        <button [disabled]="!profileForm.valid">sign up</button>
+
     </div>
     <div class="signup-img"></div>
 </div>
