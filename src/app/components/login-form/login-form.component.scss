@@ -32,9 +32,8 @@
     }
 
     .forget {
-        display: flex;
         width: 429px;
-        justify-content: flex-end;
+        text-align: right;
     }
 
     a {
@@ -45,7 +44,7 @@
     }
 
     button {
-        width: 429px;
+        width: 30vw;
         height: 50px;
         border-radius: 8px;
         font-family: Poppins;
