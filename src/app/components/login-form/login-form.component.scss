@@ -8,9 +8,10 @@
 .img-box {
     width: 65%;
     height: 100%;
-    background-image: url('../../../assets/images/Background.svg');
-    background-position: 0%;
-    background-size: cover;
+    background-image: url('../../../assets/images/background-frame.svg'), url('../../../assets/images/Background.svg');
+    background-position: top left, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .text-box {
