@@ -17,6 +17,10 @@ export class LoginFormComponent implements OnInit {
     this.shownSignup.emit(true);
   }
   login() {
-    console.log(`email: ${this.emailAddress}, password: ${this.loginPassword}`);
+    let data = {
+      email: this.emailAddress,
+      password: this.loginPassword
+    }
+    console.log(data);
   }
 }
